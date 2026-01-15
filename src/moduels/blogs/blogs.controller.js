@@ -1,5 +1,5 @@
-const express = require('express')
-const { add_blog, update, delete_blog, all_blogs, get_blog, get_user_blogs } = require('./blogs.servise')
+import express from 'express'
+import { add_blog, update, delete_blog, all_blogs, get_blog, get_user_blogs }from'./blogs.service.js'
 const router = express.Router()
 
 
@@ -13,4 +13,4 @@ router.get("/user-blogs/:id",get_user_blogs)
 
 
 
-module.exports = router
+export default router

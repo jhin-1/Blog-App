@@ -1,4 +1,4 @@
-const connection = require('../../database/connection')
+import connection from '../../database/connection.js'
 
 const sign_up = (req,res)=>{
     let {name,email,password} = req.body
@@ -47,7 +47,7 @@ const profile_user = (req,res)=>{
 
 }
 
-module.exports = {
+export  {
     sign_up,
     login,
     profile_user,

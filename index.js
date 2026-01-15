@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const RouterUsers = require('./src/moduels/users/users.controllr')
-const RouterBlogs = require('./src/moduels/blogs/blogs.controllar')
+import RouterUsers from"./src/moduels/users/users.controller.js";
+import RouterBlogs  from './src/moduels/blogs/blogs.controller.js';
 
 app.use(express.json())
 app.use(RouterUsers)

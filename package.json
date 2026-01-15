@@ -9,10 +9,18 @@
   "devDependencies": {},
   "scripts": {
     "start": "node --watch index.js"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "A robust RESTful API for a blogging platform, built with **Node.js**, **Express**, and **MySQL**. This project demonstrates a modular architecture for managing users and blog posts, providing a solid foundation for any blogging application.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhin-1/Blog-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhin-1/Blog-App/issues"
+  },
+  "homepage": "https://github.com/jhin-1/Blog-App#readme"
 }

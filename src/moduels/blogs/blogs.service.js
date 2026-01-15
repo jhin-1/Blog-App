@@ -1,4 +1,4 @@
-const connection = require('../../database/connection')
+import connection from '../../database/connection.js'
 
 const add_blog = (req,res)=>{
     let{Title,Content,user_id} = req.body
@@ -89,7 +89,7 @@ const get_user_blogs = (req,res)=>{
         }
     })
 }
-module.exports = {
+export {
     add_blog,
     update,
     delete_blog,
