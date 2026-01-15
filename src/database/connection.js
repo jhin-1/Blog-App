@@ -1,9 +1,12 @@
 import mysql from"mysql2";
+
+import env from '../../config/env.service.js';
+
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'blog_app'
+  host: env.database_Host,
+  user: env.database_User,
+  password: env.database_Password,
+  database: env.database_Name
 });
 // check connection database 
 connection.connect((err)=>{
